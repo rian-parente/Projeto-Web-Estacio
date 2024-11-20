@@ -1,0 +1,316 @@
+/* Estilização do cabeçalho da página */
+ .home{
+display: flex;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  position: relative;
+  width: 73%;
+  height: 300px;
+  margin: 0 auto;
+  background: url('neuron1.jpg') center/cover no-repeat;
+  overflow: hidden; 
+  font: 15px;
+  border-radius: 15px;
+}
+
+.home:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.home h1 {
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  font-size: calc(1.5em + 2vw);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+  background-color: 	#363636;
+  color: #ffffff;
+  padding: 20px;
+  margin:30px auto ;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  height: auto; 
+}
+
+.menu h2 {
+  font-size: 1.8rem;
+  margin-top: 10px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  gap: 10px;
+  margin-left: 6%;
+} 
+
+
+.menu ul li {
+  margin-bottom: 10px;
+  width: 40%;
+  text-align: left;
+  list-style-position: outside;
+}
+
+.menu ul li a {
+  font-size: 1.25rem;
+  color:#d2d2d2;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+#bk{
+  display: block;
+  margin: -17px auto; 
+  background-color: #222222 ;
+  color: #222222;
+  width: 80%;
+
+  border-radius: 15px;
+}
+
+#clik {
+  color: #d2d2d2;
+  opacity: 0.5;
+  margin-left: 100px;
+}
+
+.tab-estilo {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
+
+th,td {
+  border: 1px solid #5a5a5a;
+  padding: 12px;
+  text-align: left;
+}
+
+ th {
+  background-color: #2b2b2b ; 
+  color: #ffffff; 
+  font-weight: bold;
+}
+
+td {
+  background-color: #444444; 
+  color: #dadada; 
+}
+
+ #td2{
+  background-color:#3a3a3a ;
+} 
+
+/* Destacar 'reserva cognitiva' */
+.rc {
+    color:#848484;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.rc:hover{
+    color: #585858;
+}
+
+/* Camada de sobreposição */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Transparência do fundo */
+    backdrop-filter: blur(4px); /* Desfoque do fundo */
+    z-index: 999;
+}
+
+.card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #262626;
+    color: #d2d2d2;
+    padding: 30px;
+    width: 80%; 
+    max-width: 500px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: opacity 0.3s ease; 
+}
+
+.card h3 {
+    margin-top: 0;
+    color: white;
+
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Estilização da section id="pesquisas" */
+.box {
+  display: block;
+  margin: 0 auto;
+  background-color:#363636; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  width: 60%;
+}
+
+.box:hover {
+  color: #dcdcdc;
+  background-color: #444444 ;
+}
+
+.box:focus {
+  outline: 2px solid ; 
+}
+
+.tech {
+  margin-top: 20px;
+}
+
+.detalhes {
+  display: none;
+  margin: 0 auto;
+  background-color: #262626;
+  padding: 15px;
+  border:#dcdcdc ;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.05em;
+  line-height: 1.5;
+  width: 60%;
+}
+
+.detalhes.show {
+  display: block;
+}
+
+h2{
+  color: white;
+}
+
+.txt {
+  padding: 20px;
+  font-size: 1.2rem;
+  color:#d2d2d2;
+  margin: 0 auto; 
+  width:57rem;   
+} 
+
+body{
+  background-color: #1C1C1C;
+}
+
+#bk2{
+  background-color: #363636;  
+  color:#ffffff ;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin:35px auto ;
+  width: 80%;
+  border-radius: 10px;
+}
+
+#bk2 ul{ 
+  column-count: 1;
+ }
+
+#bk2 h2{
+  font-size: 24px;
+  display: flex;
+} 
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 1px;
+  font-size: 2.1em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+u{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+summary{
+  color:#c8c8c8 ;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+summary:hover{
+  color:#828282 ;
+}
+
+#link{
+  color:#848484;
+}
+
+#link:hover{
+  color:#585858;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+#link2{
+  color: white;
+} 
+
+#link2:hover{
+  color: #d2d2d2;
+}
